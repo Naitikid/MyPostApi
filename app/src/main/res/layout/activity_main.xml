@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acivity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logoid"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_75dp"
+            android:layout_marginTop="@dimen/dimens_30dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/welcometextLogin"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_50dp"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimens_20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoid" />
+
+        <ImageView
+            android:id="@+id/imgid"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_30dp"
+            android:layout_marginTop="@dimen/dimens_50dp"
+            android:layout_marginEnd="@dimen/dimens_30dp"
+            android:src="@drawable/bgimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoid" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/welcometext"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_50dp"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimens_20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgid" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tagline"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_30dp"
+            android:layout_marginTop="@dimen/dimens_45dp"
+            android:layout_marginEnd="@dimen/dimens_30dp"
+            android:gravity="center"
+            android:text="@string/tagline"
+            android:textSize="@dimen/dimens_20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcometext" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btngettingstart"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="@dimen/dimens_60dp"
+            android:layout_marginStart="@dimen/dimens_30dp"
+            android:layout_marginTop="@dimen/dimens_25dp"
+            android:layout_marginEnd="@dimen/dimens_30dp"
+            android:text="@string/gettingstarted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tagline" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/already"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_79dp"
+            android:layout_marginTop="@dimen/dimens_25dp"
+            android:text="@string/alreadyAccount"
+            app:layout_constraintStart_toEndOf="@id/alreadyLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btngettingstart" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/alreadyLogin"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_10dp"
+            android:text="@string/loginin"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/already"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/already"
+            app:layout_constraintTop_toTopOf="@id/already" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
